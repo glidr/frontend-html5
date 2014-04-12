@@ -1,0 +1,98 @@
+/* imports */
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,400);
+
+/* Global */
+body { 
+	padding-top: 70px; 
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.navbar {
+	background-color: white;
+	text-align: center;
+	display: block;
+}
+
+.center {
+	text-align: center;
+}
+.border {
+	border: solid 1px #000;
+}
+
+.yellow {
+	color: #ffcf59;
+}
+.red {
+	color: red;
+}
+/* Welcome */
+
+#welcome {
+	background-color: #efeee4;
+}
+#logo {
+}
+
+#welcome #title {
+	padding-bottom: 15px;
+}
+#welcome #desc {
+	padding-bottom: 5x;
+}
+#welcome #subdesc {
+		font-size: 14px;
+}
+
+#welcome #email {
+	margin-top: 60px;
+}
+
+#welcome #password {
+	margin-top: 10px;
+}
+input {
+	border-radius: 5px;
+	border: 2px solid #0dccc0; 
+  background   : rgba(0,0,0,.1);
+  padding: 5px;
+}
+input:focus, textarea:focus {
+	background-color: #fff;
+  border-radius: 5px;
+  outline      : none;
+}
+
+#welcome #name-submit {
+	margin-top: 10px;
+	background-color: #0dccc0;
+	padding: 15px;
+	color: #fff;
+	font-weight: 400;
+}
+#welcome #name-submit:hover {
+	background-color: #12b2a3;
+}
+/* Index */
+#title {
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+#bell {
+	font-size: 20px;
+	padding-top: 12px;
+	color: #000;
+}
+#bell:hover {
+	color: #0dccc0;
+}
+
+#main {
+	background-color:#efeee4;
+}
+

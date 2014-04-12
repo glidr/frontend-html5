@@ -1,0 +1,264 @@
+.list {
+	margin-top:50px;
+}
+
+.front, .back {
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	width: 100%;
+} 
+
+#flipone .front, #flipone .back {
+	border: 4px solid #d35400;
+}
+
+#flipone .back {
+	background-color: #d35400;
+	color: #fff;
+}
+
+#fliptwo .front, #fliptwo .back {
+	border:  4px solid #3498db;
+}
+#fliptwo .back {
+	background-color: #3498db;
+	color: #fff;
+}
+
+#flipthree .front, #flipthree .back {
+	border:  4px solid #e74c3c;
+}
+#flipthree .back {
+	background-color:#e74c3c;
+	color: #fff;
+}
+
+#flipfour .front, #flipfour .back {
+	border:  4px solid #1abc9c;
+}
+#flipfour .back {
+	background-color:#1abc9c;
+	color: #fff;
+}
+
+.back input {
+	color:#000;
+}
+
+
+.item-image:hover {
+	background-color: inherit;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+p {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	color: #000;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?2rlj59');
+	src:url('../fonts/icomoon.eot?#iefix2rlj59') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?2rlj59') format('woff'),
+		url('../fonts/icomoon.ttf?2rlj59') format('truetype'),
+		url('../fonts/icomoon.svg?2rlj59#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	margin: auto;
+	font-size: 	5em;
+	width: 100%;
+	color: #000;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 10px;
+}
+
+.back > [class^="icon-"], .back > [class*=" icon-"]{
+	color: #fff;
+}
+
+.icon-headphones:before {
+	content: "\e600";
+}
+
+.icon-download:before {
+	content: "\e601";
+}
+.icon-glass:before {
+	content: "\e602";
+}
+.icon-mug:before {
+	content: "\e603";
+}
+.icon-food:before {
+	content: "\e604";
+}
+.icon-cloud-download:before {
+	content: "\e605";
+}
+.icon-brightness-medium:before {
+	content: "\e606";
+}
+.icon-menu:before {
+	content: "\e607";
+}
+
+.item-image {
+	width: 100%;
+	height: 150px;
+	border: 4px solid #3498db;
+	border-radius: 10px;
+	margin-top: 15px;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+p.message {
+	font-size: 20px;
+	margin-top: 15px;
+	text-align: center;	
+	text-transform: uppercase;
+	word-wrap: break-word;
+}
+
+div.header{
+	width: 100%;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+#one {
+	background-color: #9b59b6;
+}
+
+.item-image:nth-child(1) {
+	border-color: #9b59b6;
+}
+
+#two {
+	background-color: #e74c3c;
+}
+
+.item-image:nth-child(2) {
+	border-color: #e74c3c;
+}
+
+#three {
+	background-color: #2ecc71;
+}
+
+.item-image:nth-child(3) {
+	border-color: #2ecc71;
+}
+
+#four {
+	background-color: #34495e;
+}
+
+.item-image:nth-child(4) {
+	border-color: #34495e;
+}
+#five {
+	background-color: #d1404a;
+}
+
+.item-image:nth-child(5) {
+	border-color: #d1404a;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+	-webkit-perspective: 1000;
+	height: 200px;
+	padding: 10px;
+}
+	/* flip the pane when hovered */
+.flip-container.hover .flipper {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+}
+
+/* flip speed goes here */
+.flipper {
+	height: 100%;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	-webkit-backface-visibility:hidden;
+	padding-bottom: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	z-index: 1;
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+}
+
+img.plane {
+	vertical-align: middle;
+}
+
+.close {
+	opacity:0.5;
+    transform:scale(1.2,1.2);
+    -ms-transform:scale(1.2,1.2); /* IE 9 */
+    -webkit-transform:scale(1.2,1.2); /* Safari and Chrome */
+    -o-transform:scale(1.2,1.2); /* Opera */
+    -moz-transform:scale(1.2,1.2); /* Firefox */
+}
+
+.grow {
+	scale: 2;
+}
+
+.sent > p {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.icon-menu {
+	font-size: 30px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: right
+}

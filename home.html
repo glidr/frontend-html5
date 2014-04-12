@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RAK</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/hammer.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body ng-app="rak">
+
+    <div class="bar bar-header bar-light">
+      <h1 class="title">GLIDR
+        <span class="glyphicon glyphicon-bell"></span>
+      </h1>
+    </div>
+    
+    <div class='container animted'>
+      <div class="flip-container animated" id='flipone'>
+        <div class="flipper animated">
+          <div class="front">
+              <div class='icon-download'></div>
+              <p class='message'>Send someone your favourite app to try out</p>
+          </div>
+          <div class="back">
+            <div class='icon-download'></div>
+            <p class='message'>How much do you want to send?</p>
+            <form>
+              <input class='price' value=$1.99 placeholder=$1.99></input>
+              <img src='img/plane.png' width='20px' height='20px' id='plane1'  class='plane animated'></img>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="flip-container animated" id='fliptwo'>
+        <div class="flipper">
+          <div class="front">
+              <div class='icon-headphones'></div>
+              <p class='message'>Send someone your favourite song to try out</p>
+          </div>
+          <div class="back">
+            <div class='icon-headphones'></div>
+            <p class='message'>How much do you want to send?</p>
+            <form>
+              <input class='price' value=$0.99 placeholder=$0.99></input>
+              <img src='img/plane.png' width='20px' height='20px' id='plane2'  class='plane animated'></img>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="flip-container animated" id='flipthree'>
+        <div class="flipper">
+          <div class="front">
+              <div class='icon-mug'></div>
+              <p class='message'>Buy someone a pick-me-up coffee</p>
+          </div>
+          <div class="back">
+            <div class='icon-mug'></div>
+            <p class='message'>How much do you want to send?</p>
+            <form>
+              <input value=$1.99 placeholder=$1.99></input>
+              <img src='img/plane.png' width='20px' height='20px' id='plane3'  class='plane animated'></img>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="flip-container animated" id='flipfour'>
+        <div class="flipper">
+          <div class="front">
+              <div class='icon-food'></div>
+              <p class='message'>Send someone a treat to sweeten their day</p>
+          </div>
+          <div class="back">
+            <div class='icon-food'></div>
+            <p class='message'>How much do you want to send?</p>
+            <form>
+              <input value=$3.99 placeholder=$3.99></input>
+              <img src='img/plane.png' width='20px' height='20px' id='plane4'  class='plane animated'></img>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='sent' style='display:none'>
+      <div class='sent'>
+        <img class='glider animated' src='img/plane-large.png' width='150px' height='150px'></img>
+        <p>Congrats! You've spread some kindness!</p>
+
+    </div>
+  </body>
+</html>
